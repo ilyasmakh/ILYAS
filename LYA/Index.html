@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/i18next@21.6.15/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.3/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://unpkg.com/jquery-i18next@1.2.1/dist/umd/jquery-i18next.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/exp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+  
+      <link rel="icon" type="image/x-icon" href="l.png">
+      <link rel="stylesheet" href="css/skill.css">
+    <title>ILYAS Makhloul</title>
+</head>
+<body>
+    <header class="header" id="top">
+        <!---->
+        <div class="w3-top">
+
+            <div class="w3-bar w3-black w3-card header">
+
+
+           
+
+
+              <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <a href="#top" class="w3-bar-item w3-button w3-padding-large " >ILYAS.</a>
+             
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+
+              <div class="w3-dropdown-hover">
+                <button class="w3-button w3-black" data-i18n="lang" >Francais </button>
+                <div class="w3-dropdown-content w3-bar-block w3-border">
+                  <a href="" class="w3-bar-item w3-button" onclick="changeLanguage('fr')"><span class="flag-icon flag-icon-mf flag-icon-squared"></span>  Francais</a>
+                    <a href="" class="w3-bar-item w3-button" onclick="changeLanguage('en')"><span class="flag-icon flag-icon-um flag-icon-squared"></span>  English</a>
+                    <a href="" class="w3-bar-item w3-button" onclick="changeLanguage('ar')"><span class="flag-icon flag-icon-ma flag-icon-squared"></span >  العربية</a>
+                          <a href="" class="w3-bar-item w3-button" onclick="changeLanguage('es')"><span class="flag-icon flag-icon-es flag-icon-squared"></span>  español</a>
+                              <a href="" class="w3-bar-item w3-button" onclick="changeLanguage('al')"><span class="flag-icon flag-icon-be flag-icon-squared"></span>  deutsch</a>
+                    
+                </div>
+            </div>
+            
+             
+             
+              <span class="w3-right">
+
+              
+              
+
+             
+              <a href="#home" data-i18n="home"  class="w3-bar-item w3-button w3-padding-large w3-hide-small" >Accueil</a>
+              
+              <a href="#pers" data-i18n="pers"   class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile</a>
+              <a href="#Experience" data-i18n="exp"   class="w3-bar-item w3-button w3-padding-large w3-hide-small">Expériences</a>
+              <a href="#skill" data-i18n="comp"   class="w3-bar-item w3-button w3-padding-large w3-hide-small">Compétences</a>
+              <a href="#prj" data-i18n="prjs"  class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projets</a>
+              <a href="#parc" data-i18n="parc"  class="w3-bar-item w3-button w3-padding-large w3-hide-small">Parcours</a>
+              <a href="#contact" data-i18n="contact"  class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+            </span>
+
+
+    
+            </div>
+          </div>
+  
+          <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+          <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; z-index : 1000 ;">
+            <a href="#home" data-i18n="home"  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Accueil</a>
+            <a href="#pers" data-i18n="pers"  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Profile</a>
+            <a href="#Experience" data-i18n="exp"  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Expériences</a>
+            <a href="#skill" data-i18n="comp"  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Compétences</a>
+            <a href="#prj" data-i18n="prjs"  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projets</a>
+            <a href="#parc" data-i18n="parc"  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Parcours</a>
+           
+            <a href="#contact" data-i18n="contact"  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+          </div>
+    </header>
+<main>
+
+
+  <!------------------------------------------------------------------------------------------------------------------------>
+    <div  class="hero-section w3-animate-left " id="home">
+        <div class="hero-section-main">
+           <div class="hero-section-into-text w3-margin-top">
+               <h1 class="w3-text-white" data-i18n="nom">ILYAS MAKHLOUL</h1>
+              <p class="w3-right w3-text-white w3-small w3-hide-small hero-qoute ">
+                "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." - Martin Fowler
+
+              </p>
+               <div class="w3-text-white l " style="margin-top:60px">
+                 <p data-i18n="statut"><strong>Etudiant Ingénieur</strong> en Génie Informatique <br>   Ecole Nationale des Sciences Appliquée Fés , et <strong>je suis à la recherche d'un stage de fin d'étude PFE  (6mois à partie de janvier 2025)</strong> </p>
+                 <div class="w3-margin-top">
+
+  
+                  <a href="https://www.facebook.com/profile.php?id=100008452383761" style="color:#fff;">
+                    <i class="fab fa-facebook-f w3-hover-opacity icons"></i>
+                  </a> 
+                  
+                  <a href="https://www.instagram.com/ilyas.ma1/" style="color:#fff;">
+                    <i class="fab fa-instagram w3-hover-opacity icons"></i>
+                  </a> 
+                  
+                  <a href="https://twitter.com/ilyas_makhloul?t=tm3yvR_egETBF4s4HyvDFA&s=09" style="color:#fff">
+                    <i class="fab fa-twitter w3-hover-opacity icons"></i>
+                  </a>  
+                  
+                  <a href="https://www.linkedin.com/in/ilyas-makhloul-95508a244/" style="color:#fff">
+                    <i class="fab fa-linkedin-in w3-hover-opacity icons"></i>
+                  </a>  
+            <style>
+   
+            </style>
+            </div>
+               </div>
+               <a href="#new-arrivals" class="" >
+                <button class="w3-text-white w3-small w3-round w3-red w3-btn w3-margin-top" id="CV" ><a href="docs/CV_ILYAS_MAKHLOUL.pdf" style="color:#fff" data-i18n="DownCV">Télécharger CV </a>
+                  
+                </button>
+
+                
+               </a>
+               
+           </div>
+        </div>    
+        </div>
+    
+    </div>
+  </main>
+
+  <!------------------------------------------------------------------------------------------------------------------->
+<!-- ################################################################################################ -->
+ 
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="t1" id="gallery">
+
+ 
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div id="pers">
+  
+<div class="container">
+  <div class="profile-card"> 
+       <div class="profile-pic">
+           <img src="images/avatar.jpeg" alt="user avatar">
+       </div>
+
+       <div class="profile-details">
+            <div class="intro">
+               <h2 data-i18n="nom" >ILYAS MAKHLOUL</h2>
+               <h4 data-i18n="etud" >Etudiant ingénieurs</h4>
+               <div class="social">
+                   <a href="https://www.facebook.com/profile.php?id=100008452383761"><i class="fab fa-facebook" style="color:var(--blue)"></i></a>
+                   <a href="https://twitter.com/ilyas_makhloul?t=tm3yvR_egETBF4s4HyvDFA&s=09"><i class="fab fa-twitter"  style="color:var(--skyblue)"></i></a>
+                   <a href="https://www.instagram.com/ilyas.ma1/"><i class="fab fa-instagram"  style="color:var(--dark-pink)"></i></a>
+                   <a href="https://www.linkedin.com/in/ilyas-makhloul-95508a244/"><i class="fab fa-linkedin"  style="color:var(--light-blue)"></i></a>
+               </div>
+            </div>
+
+            <div class="contact-info">
+               <div class="row">
+                    <div class="icon">
+                       <i class="fa fa-phone"  style="color:var(--dark-magenta)"></i>
+                    </div>
+                    <div class="content">
+                       <span data-i18n="tel">Téléphone</span>
+                       <h5>+212 6 19 70 61 44</h5>
+                    </div>
+               </div>
+
+               <div class="row">
+                   <div class="icon">
+                      <i class="fa fa-envelope-open"  style="color:var(--light-green)"></i>
+                   </div>
+                   <div class="content">
+                      <span data-i18n="email">Email</span>
+                      <p>makhloul.ilyas@usmba.ac.ma</p>
+                   </div>
+              </div>
+
+              <div class="row">
+               <div class="icon">
+                  <i class="fa fa-map-marker"  style="color:var(--light-purple)"></i>
+               </div>
+               <div class="content">
+                  <span data-i18n="loc">Localisation</span>
+                  <h5 data-i18n="addr">Fes , maroc </h5>
+               </div>
+            </div>
+
+       </div>
+       <a href="docs/CVA_ILYAS_MAKHLOUL.pdf">
+          <button class="download-btn" data-i18n="DownCVA"> <i class="fa fa-download"></i> Télecharger CV en anglais</button>
+        </a></div>
+  </div>
+
+  <!----about section ----->
+  <div class="about">
+      <h1 data-i18n="prof">Profile</h1>
+
+      <p data-i18n="prof1"> Je suis élève ingénieur en génie informatique en deuxième année de cycle ingénieur à l'École Nationale des Sciences Appliquées de Fès (bac+4) , je suis un programmeur passionné qui maîtrise plusieurs langages de programmation.
+     </p >
+
+     <p data-i18n="prof2">
+      Mon intérêt particulier se porte sur le développement des application web/andoid et des jeux. et tous ce qu’est AI - Machine learning - Deep Learning
+     </p>
+     <h2 data-i18n="do">Qui ce que je fait !!!</h2>
+     <div class="work">
+        <div class="workbox">
+            <div class="icon">
+               <img src="images/ui.svg" alt="">
+            </div>
+            <div class="desc">
+               <h3 data-i18n="AI">AI Machine Learning</h3>
+               <p data-i18n="AIdesc">je suis entrain d'apprendre les technologie en relation avec AI , machine learning (régression/classification) en python .</p>
+            </div>
+        </div>
+
+        <div class="workbox">
+           <div class="icon">
+              <img src="images/app.svg" alt="">
+           </div>
+           <div class="desc">
+              <h3 data-i18n="AppDev">App Developement</h3>
+              <p data-i18n="AppDevDesc">J'ai développé plusieurs applications bureautiques et pour Android. Vous pouvez les voir dans la section des projets ci-dessous.</p>
+           </div>
+       </div>
+
+       <div class="workbox">
+           <div class="icon">
+              <img src="images/api.svg" alt="">
+           </div>
+           <div class="desc">
+              <h3  data-i18n="API">API Developement</h3>
+              <p data-i18n="APIdesc">J'ai déjà travaillé avec des API d'hôtels lors du développement de EasyStay pendant mon stage d'initiation.</p>
+           </div>
+       </div>
+
+       <div class="workbox">
+           <div class="icon">
+              <img src="images/web.svg" alt="">
+           </div>
+           <div class="desc">
+              <h3 data-i18n="WebDev">Web Developement</h3>
+              <p data-i18n="WebDevDesc">J'ai développé plusieurs applications web en utilisant différentes technologies telles que ASP.NET Core et Java EE.</p>
+           </div>
+       </div>
+     </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+</div>
+<!-- JAVASCRIPTS -->
+<script src="js/lang.js" defer></script>
+
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<!-- Homepage specific -->
+<script src="layout/scripts/jquery.easypiechart.min.js"></script>
+<!-- / Homepage specific -->
+
+
+
+<div id="Experience">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="sub-heading" id="parc"></h4>
+        <h1 class="heading pink" data-i18n="ExpProf" ><span class="pink" >Expérience</span><br> professionnel</h1>
+      </div>
+    </div>  
+  </div>
+  
+ 
+  <div class="card-list">
+   
+
+  
+
+      <a href="https://artiweb.ma/" class="card-item">
+          <img src="images/A.PNG" alt="Card Image">
+          <span class="developer" data-i18n="StIni">Stage d'initiation</span>
+          <h3 data-i18n="StIniDesc">Développement d'une application web permettant la recherche d'hôtels.</h3>
+          <p><strong data-i18n="entr1">Centre de marketing digitale ArtiWeb Fés</strong></p>
+          <p data-i18n="dateSt1">Juillet 2023</p>
+          <div class="arrow">
+              <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+      </a>
+      <a href="https://www.ocpgroup.ma/fr" class="card-item">
+          <img src="images/logoOCP.PNG" alt="Card Image">
+          <span class="designer" data-i18n="StPFA">Stage d'application PFA</span>
+          <h3 data-i18n="StPFAdesc">Réalisation d'une Application Web Responsive pour la
+            Digitalisation des Processus DCI : Gestion des Audits de
+            Sécurité Incendie et Intervention d'Urgence</h3>
+          <p><strong>OCP JORF LASFAR</strong></p>
+          <p>08.07.2024 - 31.08.2024</p>
+          <div class="arrow">
+              <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+      </a>
+      <a href="#" class="card-item">
+          <img src="images/w.PNG" alt="Card Image">
+          <span class="editor" data-i18n="StPFE">Stage PFE</span>
+          <h3>Je dois commencer un stage PFE (6mois) depuis janvier 2025 </h3>
+          <p><strong>Entreprise - société,...</strong></p>
+          <p>01.01.2025 - 01.07.2025</p>
+          <div class="arrow">
+
+              <i class="fas fa-arrow-right card-icon"></i>
+          </div>
+      </a>
+  </div>
+
+
+</div>
+  <!--------------------------------------------------------------------------------------------------------------------------->
+  
+ 
+  <div id="skill" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="sub-heading" id="parc"></h4>
+          <h1 class="heading pink" data-i18n="CompTech" ><span class="green" >Compétences</span><br> techniques</h1>
+        </div>
+      </div>  
+    </div>
+    <section class="sections" id="abouts">
+       
+
+        <div class="container">
+            <div class="rows">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="about-info">
+                        <h3 data-i18n="Comp">Mes Compétences</h3>
+                        <p style="text-align: justify;" data-i18n="CompDesc">Je suis un développeur web expérimenté avec une expertise en HTML, CSS et JavaScript, ainsi que des frameworks modernes comme Bootstrap. J'ai également une expérience significative en développement back-end avec Python, PHP et Java, et en gestion de bases de données comme MySQL et MongoDB. Mes compétences s'étendent également à l'intelligence artificielle, notamment avec TensorFlow pour le machine learning, et en business intelligence avec des outils comme Talend Open Studio. Avec cette combinaison de compétences, je suis capable de concevoir et de développer des solutions logicielles innovantes pour divers projets.</p>
+                      </p>
+                        <div class="about-btn">
+                            <button class="btn"><a href="https://www.linkedin.com/in/ilyas-makhloul-95508a244/" style="color : white">LinkedIn</a>       <i class="fab fa-linkedin"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="FrontEnd">Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                              <span>SCSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="langProg">Langage de programmation</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>C/C++</span>
+                            <span>JAVA</span>
+                            <span>Python</span>
+                            <span>Kotlin</span>
+                            <span>C#</span>
+                            <span>Prolog</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="BD">Base de donnée</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
+                            <span>Oracle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="Framworks">Frameworks</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Android Studio</span>
+                            <span>ASP .NET</span>
+                            <span>JEE</span>
+                            <span>Spring</span>
+                            <span>FLASK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="BackEnd">BackEnd</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>PHP</span>
+                            <span>JEE</span>
+                            <span>.NET</span>
+                            <span>Spring</span>
+                            <span>Flask -python</span>
+                            <span>MATLAB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="BI">BI et analyse de données</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Talend Open studio</span>
+                            <span data-i18n="concDW">Conception des dataware hose</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="SIG">Système d'information Géographique</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>ArcMap</span>
+                            <span>ArcGIS pro</span>
+                        </div>
+                    </div>
+
+
+                 <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="Res">Administration Systèmes et Réseaux</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Packet Tracer</span>
+                            <span>Active directory</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="AI" >Intelligence artificielle</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Machine learning</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+   
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3 data-i18n="autre">Autre compétences techniques</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span data-i18n="merise" >Conception MERISE</span>
+                            <span data-i18n="uml">Modélisation UML</span>
+                            <span>BDO ODMG ODL</span>
+                            <span>XML</span>
+                        </div>
+                    </div>
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+    
+     
+        
+   
+     </section> </div>
+
+   <!----------------------------------------------------------------------------------------->
+
+   <header class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6 col-xs-12">
+          <nav>
+         
+          </nav>
+          <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+          <div class="hero-text" id="prj">
+            <h1><span data-i18n="PP">Projets et Parcours de</span><br>ILYAS.</h1>
+            <h3 data-i18n="AppCon">Application des connaissances</h3>
+            <a href="docs/CVA_ILYAS_MAKHLOUL.pdf" class="btn btn-lg btn-primary" data-i18n="DownCVA">Télecharger CV en anglais</a>
+           <style>
+        
+
+           </style>
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="case-study">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="sub-heading"></h4>
+          <h1 class="heading purple" data-i18n="projet"><span class="purple" >Projet</span><br>réalisé</h1>
+          <!-- Swiper -->
+    
+            
+          <div class="swiper-container client-swiper">
+            <div class="swiper-wrapper">
+
+                   <div class="swiper-slide client-box">
+                <img src="assets/AI.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Application Web de detection des signes manuels et reconnaissance
+                    faciale </h3>
+                <p class="text-left tag">Développement avec Flask - machine learning en python - Projet PFA</p>
+               
+                <p class="text-left"><a href="https://github.com/ilyasMak/Hand-sign-detection--Face_regonition--Flask-AI/tree/main">voir Codes &#8594;</a></p>
+               
+                                           
+              </div>
+
+                 <div class="swiper-slide client-box">
+                <img src="assets/chatApp.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">ChatApp webSockets</h3>
+                <p class="text-left tag">Développement des application web en Spring Boot </p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_springboot-websockets-mongodb-activity-7188990084791095296-ifzp?utm_source=share&utm_medium=member_desktop">voir démo &#8594;</a></p>
+                <p class="text-left"><a href="https://github.com/ilyasMak/ChatApp-Spring-Boot-webSockets">voir Codes &#8594;</a></p>
+               
+                                           
+              </div>
+
+                  <div class="swiper-slide client-box">
+                <img src="assets/ReadQuran.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">ReadQuran Application Web de Coran</h3>
+                <p class="text-left tag">Développement des application web en Spring Boot </p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_quran-springboot-apis-activity-7183690170414604288-X8BO?utm_source=share&utm_medium=member_desktop">voir démo &#8594;</a></p>
+                <p class="text-left"><a href="https://github.com/ilyasMak/ReadQuran-Spring-boot">voir Codes &#8594;</a></p>
+               
+                                           
+              </div>
+
+                    <div class="swiper-slide client-box">
+                <img src="assets/Likayn.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">LiKayn Application Web des messages secrets</h3>
+                <p class="text-left tag">Développement des application web en Flask python </p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_python-flask-webdevelopment-activity-7178397821438435328-fnMi?utm_source=share&utm_medium=member_desktop">voir démo &#8594;</a></p>
+                <p class="text-left"><a href="https://github.com/ilyasMak/Flask_LiKayn/tree/master">voir Codes &#8594;</a></p>
+               
+                                           
+              </div>
+
+                 <div class="swiper-slide client-box">
+                <img src="assets/FS.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">FlaShop Application Web de vente en ligne (E-commerce)</h3>
+                <p class="text-left tag">Développement des application web en ASPcore MVC .NET </p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_flashop-ecommerce-aspnetcore-activity-7147360805271867394-nOT8?utm_source=share&utm_medium=member_desktop">voir démo &#8594;</a></p>
+                <p class="text-left"><a href="https://github.com/ilyasMak/FlaShop-application-web-de-vente-en-ligne">voir Codes &#8594;</a></p>
+               
+                                           
+              </div>
+
+                
+
+                 <div class="swiper-slide client-box">
+                <img src="assets/ge.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Application de gestion d'entreprise en C# Windows Forms</h3>
+                <p class="text-left tag">Développement des application pour les ordinateurs</p>
+                <p class="text-left"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7131078055812313088/">voir démo &#8594;</a></p>
+                <p class="text-left"><a href="https://github.com/ilyasMak/Business-Manager/tree/main/Gestion%20employ%C3%A9s">voir Codes &#8594;</a></p>
+                   <p class="text-left"><a href="https://github.com/ilyasMak/Business-Manager/blob/main/Gestion%20employ%C3%A9s/Gestion%20employ%C3%A9s/bin/Debug/Gestion%20employ%C3%A9s.exe">Télécharger l'application &#8594;</a></p>
+                                           
+              </div>
+
+                  <div class="swiper-slide client-box">
+                <img src="assets/NoteP.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">NotePad en C# Windows Forms</h3>
+                <p class="text-left tag">Développement des application pour les ordinateurs</p>
+               <p class="text-left"><a href="https://github.com/ilyasMak/NotePad-C-/tree/main/NotePad">voir Codes &#8594;</a></p>
+          <p class="text-left"><a href="https://github.com/ilyasMak/NotePad-C-/blob/main/NotePad/NotePad/bin/Debug/NotePad.exe">Télécharger l'application &#8594;</a></p>
+                             
+              </div>
+
+                  <div class="swiper-slide client-box">
+                <img src="assets/chrono.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Chronométre en C# Windows Forms</h3>
+                <p class="text-left tag">Développement des application pour les ordinateurs</p>
+                          <p class="text-left"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7124191601173622784/" >voir éxecution &#8594;</a></p>
+           
+                <p class="text-left"><a href="https://github.com/ilyasMak/StopWatch-Cs/tree/main/Chronom%C3%A9tr">voir codes &#8594;</a></p>
+                     <p class="text-left"><a href="https://github.com/ilyasMak/StopWatch-Cs/blob/main/Chronom%C3%A9tr/bin/Debug/Chronom%C3%A9tr.exe">Télécharger application &#8594;</a></p>
+                       
+              </div>
+
+                   <div class="swiper-slide client-box">
+                <img src="assets/MemoryGame.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Memory Game en C# Windows Forms</h3>
+                <p class="text-left tag">Développement des jeux pour les ordinateurs</p>
+                    <p class="text-left"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7124191601173622784/" >voir éxecution &#8594;</a></p>       
+                <p class="text-left"><a href="https://github.com/ilyasMak/Memory-Game-Cs/tree/main/MemoryGame">voir codes &#8594;</a></p>
+                   <p class="text-left"><a href="https://github.com/ilyasMak/Memory-Game-Cs/blob/main/MemoryGame/bin/Debug/net6.0-windows/MemoryGame.exe">Télecharger l'application &#8594;</a></p>
+                          
+              </div>
+
+                  <div class="swiper-slide client-box">
+                <img src="assets/XOwindowsForms.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">X-O en C# Windows Forms</h3>
+                <p class="text-left tag">Développement des jeux pour les ordinateurs</p>
+             <p class="text-left"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7124191601173622784/" >voir éxecution &#8594;</a></p>
+             <p class="text-left"><a href="https://github.com/ilyasMak/X-O-Game-Cs/tree/main/WindowsFormsApp1" >voir codes &#8594;</a></p>
+             <p class="text-left"><a href="https://github.com/ilyasMak/X-O-Game-Cs/blob/main/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe" >Télecharger l'application &#8594;</a></p>
+                       
+              </div>
+
+              
+
+                   <div class="swiper-slide client-box">
+                <img src="assets/qcmAndr.jpg" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Gestion des QCMs en Android studio</h3>
+                <p class="text-left tag">Développement des application pour android mobiles</p>
+                <p class="text-left"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7120066505160941569/">voir demo &#8594;</a></p>
+                         <p class="text-left"><a href="https://github.com/ilyasMak/Gestion-de-QCM-android/tree/master">voir codes &#8594;</a></p> 
+              </div>
+
+                
+                  <div class="swiper-slide client-box">
+                <img src="assets/smrtCalc.jpg" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Calculatrice Intellegente en Android studio</h3>
+                <p class="text-left tag">Développement des application pour android mobiles</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_mobilesapplications-xogames-daezveloppementandroid-activity-7116612808909172736-ABXo?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+               <p class="text-left"><a href="https://github.com/ilyasMak/TP1-TP2---Calculatrice-authentifcation-SQLite/tree/master">voir codes &#8594;</a></p>          
+              </div>
+                    <div class="swiper-slide client-box">
+                <img src="assets/NotePad.jpg" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">NotePad en Android studio</h3>
+                <p class="text-left tag">Développement des application pour android mobiles</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_mobilesapplications-xogames-daezveloppementandroid-activity-7116612808909172736-ABXo?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+             <p class="text-left"><a href="https://github.com/ilyasMak/NotePad-Android-AppLication/tree/master">voir codes &#8594;</a></p>
+                    </div>
+                  <div class="swiper-slide client-box">
+                <img src="assets/XO.jpg" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">X-O en Android studio</h3>
+                <p class="text-left tag">Développement des jeux pour android mobiles</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_mobilesapplications-xogames-daezveloppementandroid-activity-7116612808909172736-ABXo?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+             <p class="text-left"><a href="https://github.com/ilyasMak/XO-Android-Game/tree/master">voir codes &#8594;</a></p>
+                  </div>
+                 <div class="swiper-slide client-box">
+                <img src="assets/ES.jpeg" class="client-logo" style="border-radius : 30px ; ">
+                <h3 class="text-left title" style="font-family: tahoma;">Plateforme EasyStay pour la recherche des hôtels au niveau internationale </h3>
+                <p class="text-left tag">
+Stage d'initiation au sein de ARTIweb
+</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_chers-r%C3%A9seaux-linkedin-je-suis-ravi-activity-7098532753930903552-wgL2?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+              </div>
+              <div class="swiper-slide client-box">
+                <img src="assets/i1.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">PortFolio en utilisant HTML CSS et JavaScript</h3>
+                <p class="text-left tag">Développement Web</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_daezveloppementfrontend-portfolio-html-activity-7089784137686867968-QuwQ?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+             <p class="text-left"><a href="https://github.com/ilyasMak/I/tree/main/LYA">voir codes &#8594;</a></p>
+              </div>
+              <div class="swiper-slide client-box">
+                <img src="assets/i2.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Serpent en Java</h3>
+                <p class="text-left tag">Développement des jeux en Java</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_java-jeuxclassiques-craezationsraezinventaezes-activity-7068284380401528832-xFaM?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+           <p class="text-left"><a href="Prjcs/Java/snakeGame.jar">voir l'exécution &#8594;</a></p>
+              </div>
+              <div class="swiper-slide client-box">
+                <img src="assets/i3.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">X-O blue red en Java</h3>
+                <p class="text-left tag">Développement des jeux en Java</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_java-jeuxclassiques-craezationsraezinventaezes-activity-7068284380401528832-xFaM?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+                 <p class="text-left"><a href="https://github.com/ilyasMak/XO-bleu-red">voir codes &#8594;</a></p>
+                  <p class="text-left"><a href="Prjcs/Java/XO Red blue.jar">voir l'exécution &#8594;</a></p>
+              </div>
+              <div class="swiper-slide client-box">
+                <img src="assets/i4.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">TETRIS en Java</h3>
+                <p class="text-left tag">Développement des jeux en Java</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_java-jeuxclassiques-craezationsraezinventaezes-activity-7068284380401528832-xFaM?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+              <p class="text-left"><a href="Prjcs/Java/buildGame.jar">voir l'exécution &#8594;</a></p>
+              </div>
+              <div class="swiper-slide client-box">
+                <img src="assets/i5.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Application Java de Gestion de QCM </h3>
+                <p class="text-left tag">Développement des Application en Java</p>
+                <p class="text-left"><a href="https://www.linkedin.com/posts/ilyas-makhloul-95508a244_systaeymedenotationadaptable-aezvaluationjuste-activity-7072754723035992064-nPPo?utm_source=share&utm_medium=member_desktop">voir demo &#8594;</a></p>
+           <p class="text-left"><a href="https://github.com/ilyasMak/QCM-Java">voir codes &#8594;</a></p>
+              </div>
+
+              <div class="swiper-slide client-box">
+                <img src="assets/i6.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Application Matlab d'identification de voie</h3>
+                <p class="text-left tag">Développement des Application en Matlab</p>
+              </div>
+
+              <div class="swiper-slide client-box">
+                <img src="assets/i7.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Application Matlab de traitement d'image</h3>
+                <p class="text-left tag"style="font-family: tahoma;">Développement des Application en Matlab</p>
+             
+                   <p class="text-left"><a href="https://github.com/ilyasMak/Traitement-d-image-MATLAB">voir codes &#8594;</a></p>
+              </div>
+
+              <div class="swiper-slide client-box">
+                <img src="assets/i9.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">Application Matlab de Simplexe</h3>
+                <p class="text-left tag"style="font-family: tahoma;">Programmation linéaire</p>
+      
+                   <p class="text-left"><a href="https://github.com/ilyasMak/Programmation-lin-aire-MATLAB">voir codes &#8594;</a></p>
+              </div>
+
+              <div class="swiper-slide client-box">
+                <img src="assets/i8.PNG" class="client-logo">
+                <h3 class="text-left title" style="font-family: tahoma;">construction d'une serre agricole</h3>
+                <p class="text-left tag">Expérience hors spécialité </p>
+              </div>
+
+
+            </div>
+
+        
+
+         
+
+            
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="sub-heading" id="parc"></h4>
+          <h1 class="heading pink" data-i18n="parcour" ><span class="pink" >Parcour</span><br>Académique</h1>
+        </div>
+      </div>  
+    </div>
+    <div class="container-fluid" >
+      <div class="row">
+        <div class="col-md-12" style="z-index:0 ;">
+          <!-- Swiper -->
+          <div class="swiper-container testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial-box yellow">
+                <h1 data-i18n="Bac">Baccalauréat en Science Mathématiques B</h1>
+                <p data-i18n="BacDesc">J'ai décroché mon bac avec mention bien, une véritable fierté pour moi. Cela récompense mes efforts et ma détermination durant mes années d'études. C'est une grande source de motivation pour continuer à exceller et poursuivre mes ambitions académiques.</p>
+                <div class="text-right">
+                  <p class="name" data-i18n="BacPlace">- Lycée Ibn Alhaytam</p>
+                  <p class="designation" >2019-2020</p>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial-box purple">
+                <h1 data-i18n="ensa">Ecole Nationale des Sciences Appliquée des Fés</h1>
+                <p data-i18n="ensaDesc">
+                    J'ai intégré l'École Nationale de Sciences Appliquées pour devenir ingénieur, en respectant les critères d'admission requis. C'est une étape importante dans mon parcours académique et une opportunité que je saisis avec enthousiasme. Je suis motivé à relever les défis qui m'attendent et à acquérir les compétences nécessaires pour réussir dans le domaine de l'ingénierie.</p>
+                <div class="text-right">
+                  <p class="name" data-i18n="ensaPlace">- ENSAF</p>
+                  <p class="designation" >2020</p>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial-box blue">
+                <h1 data-i18n="sp">spécialité en Génie Informatique
+                </h1>
+                <p data-i18n="spDesc">
+                    Après deux années en classe préparatoire scientifique, j'ai intégré la spécialité Génie Informatique dans mon école d'ingénieurs en étant classé parmi les 40 premiers de ma promotion. C'est une étape importante dans mon parcours académique et je suis ravi d'avoir l'opportunité de me plonger dans l'étude approfondie de l'informatique. Je suis motivé à relever les défis qui se présenteront à moi et à développer mes compétences pour devenir un ingénieur en informatique compétent et accompli.</p>
+                <div class="text-right">
+                  <p class="name" data-i18n="ensaPlace">- ENSAF</p>
+                  <p class="designation">2022</p>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial-box pink">
+                <h1  data-i18n="dip">Diplomé en Génie Informatique</h1>
+                <p data-i18n="dipDesc">D'ici 2025, j'aspire à obtenir mon diplôme d'ingénieur en Génie Informatique de l'École Nationale des Sciences Appliquées de Fès (ENSAF). Je suis résolu à suivre avec détermination et engagement le programme d'études afin d'acquérir les compétences nécessaires pour exceller dans ce domaine en constante évolution. Mon ambition est de contribuer à l'innovation technologique et de devenir un professionnel compétent et accompli dans le domaine de l'informatique.</p>
+                <div class="text-right">
+                  <p class="name" data-i18n="ensaPlace">- ENSAF</p>
+                  <p class="designation">2025</p>
+                </div>
+              </div>
+
+
+           
+            
+         
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="stats">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center stat-box">
+          <h1 class="purple"><span class="counter">48</span></h1>
+          <h3 data-i18n="h">Heurs</h3>
+        </div>
+        <div class="col-md-4 text-center stat-box">
+          <h1 class="blue counter">18</h1>
+          <h3 data-i18n="p" >Projets</h3>
+        </div>
+        <div class="col-md-4 text-center stat-box">
+          <h1 class="pink"><span class="counter">39</span></h1>
+          <h3 data-i18n="cof">Cups of Coffee</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Banner -->
+ 
+
+  <!-- Footer -->
+ 
+
+  <!-- Some Javascript -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
+  <!-- Initialize Client Swiper -->
+  <script>
+  var swiper1 = new Swiper('.client-swiper', {
+    slidesPerView: 3,
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 60,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: '.swiper-pagination'
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      }
+    }
+  });
+  // Initialize Testimonial Swiper
+  var swiper2 = new Swiper('.testimonial-swiper', {
+    slidesPerView: 3,
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    spaceBetween: 30,
+    grabCursor: true,
+    freeMode: true,
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
+  });
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script>
+  // Counterup
+  $('.counter').counterUp({
+    time: 1000
+  });
+
+  // Main Navigation
+  $('#menu-toggle').click(function(){
+    $(this).toggleClass('open'),
+    $('.main-nav').toggleClass('show-it');
+  })
+  </script>
+
+  <!-- Google Analytics - You should remove this -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29231762-2', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+
+   <!-------------------------------------------------------------------------------------------->
+   
+   <div class="t1">
+   <div class="wrapper row3">
+    <main class="hoc container clear"> 
+      <h1 class="heading purple"  data-i18n="certifs"><span class="purple">Certificats
+      </span ><br >obtenue</h1>
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+     
+      <!-- ################################################################################################ -->
+      <section class="group shout">
+        <figure class="one_half first"><img src="ctfP.jpeg" alt="">
+          <figcaption class="heading"><a href="Programmation.rar" data-i18n="programmation">Programmation</a></figcaption>
+        </figure>
+        <figure class="one_half"><img src="lng.jpg" alt="">
+          <figcaption class="heading"><a href="Langues.rar" data-i18n="langues">Langues</a></figcaption>
+        </figure>
+      </section>
+      <!-- ################################################################################################ -->
+      <!-- / main body -->
+      <div class="clear"></div>
+    </main>
+  </div>
+</div>
+
+                                                                                            
+                                                  
+  
+
+                                                          
+
+
+
+
+
+
+
+<!--</div>-->
+
+<br>
+  <div class="w3-center contact" id="contact" >
+    <div class=" w3-left-align w3-margin-top contact-info ">
+       <h3 style="font-weight: 800;" class="contact-head" data-i18n="contactMe">Contacter moi</h3> 
+      
+       <p data-i18n="UcanF">vous pouvez me suivre ou envoyer un message sur mes réseaux sociaux</p>
+       <h4 style="font-weight: 600;" data-i18n="suivMoi" >Suiver moi </h4>
+       
+       <a href="https://www.facebook.com/profile.php?id=100008452383761" style="color:#000;">
+        <span class="icon-bg">
+          <i class="fab fa-facebook-f w3-hover-opacity icons"></i>
+        </span>
+      </a> 
+      
+      <a href="https://www.instagram.com/ilyas.ma1/" style="color:#000;">
+        <span class="icon-bg">
+          <i class="fab fa-instagram w3-hover-opacity icons"></i>
+        </span>
+      </a> 
+      
+      <a href="https://twitter.com/ilyas_makhloul?t=tm3yvR_egETBF4s4HyvDFA&s=09" style="color:#000">
+        <span class="icon-bg">
+          <i class="fab fa-twitter w3-hover-opacity icons"></i>
+        </span>
+      </a>  
+      
+      <a href="https://www.linkedin.com/in/ilyas-makhloul-95508a244/" style="color:#000">
+        <span class="icon-bg">
+          <i class="fab fa-linkedin-in w3-hover-opacity icons"></i>
+        </span>
+      </a></div>
+    <div class="w3-left-align w3-margin-top contact-info" >
+          <h3 style="font-weight: 600;" data-i18n="a">Adresse</h3>
+             <p data-i18n="addr" >Maroc, Fés</p>
+             <p data-i18n="maison">N 24 RUE  01 HY KARIMA</p>
+             <p >AIN HAROUNE</p>
+             <br>
+             <div class="w3-margin-to  w3-left-align" >
+              <h4 style="font-weight: 600;" data-i18n="contINFO">CONTACT INFO</h4>
+              <p> <i class="fa fa-phone " style="margin-right: 8px;font-size: 10px;"></i>+212 6 19 70 61 44</p>
+              <p><i class="fa fa-envelope " style=" margin-right: 5px;font-size: 10px;"></i>makhloul.ilyas@usmba.ac.ma</p>
+             
+             <input placeholder="Nom complet" class="w3-margin-top" type="text"/> <br>
+            <textarea rows="4" cols="30" placeholder="Ecrire Message" class="w3-margin-top" ></textarea>
+             <br>
+             <br>
+             <button class="w3-button w3-red w3-round " style="margin-left: 30px;" data-i18n="send">Envoyer</button>
+    
+           </div>     
+                 
+    </div>
+    
+    
+  </div>
+
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-md-12 text-center">
+          <h1 data-i18n="nom">ILYAS<br><span>MAKHLOUL</span></h1>
+          <ul class="social-links">
+            
+            <li><a href="https://twitter.com/ilyas_makhloul?t=tm3yvR_egETBF4s4HyvDFA&s=09"><img src="assets/twitter.png"></a></li>
+            <li><a href="https://github.com/ilyasMak"><img src="assets/github.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row sub-footer">
+     
+      </div>
+    </div>
+  </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        
+        
+        
+        
+        
+        
+    </script>
+     <style>
+       @keyframes a {
+    0%{  width : 0%; }
+    100% {width : 70% ;}
+    
+  }
+
+  @keyframes b {
+    0%{  width : 0%; }
+    100% {width : 95% ;}
+    
+  }                                                     
+   @keyframes c {
+    0%{  width : 0%; }
+    100% {width : 20% ;}
+    
+  }
+
+  @keyframes d {
+    0%{  width : 0%; }
+    100% {width : 60% ;}
+    
+  }       
+   @keyframes e {
+    0%{  width : 0%; }
+    100% {width : 50% ;}
+    
+  }
+
+  @keyframes f {
+    0%{  width : 0%; }
+    100% {width : 80% ;}
+    
+  }                                                         
+   @keyframes g {
+    0%{  width : 0%; }
+    100% {width : 45% ;}
+    
+  }
+
+  @keyframes h {
+    0%{  width : 0%; }
+    100% {width : 35% ;}
+    
+  }               
+   ul a {
+   text-decoration: none; /* Supprimer le soulignement */
+   cursor: pointer  ;                                                          
+                                                            }                                                         
+   ul a:hover {
+    color: orange; /* Changer la couleur de survol ici */
+    
+  }
+                                                            
+                                                            </style>
+</body>
+</html>
